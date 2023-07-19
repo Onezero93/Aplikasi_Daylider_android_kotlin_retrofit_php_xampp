@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9fdf4"
+    tools:context=".ui.activity.Update">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rectangle_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/arrow_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Ubah Catatan"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Matakuliah"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_matakuliah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:hint="Matakuliah"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textColorHint="#9A9999" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Universitas"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_universitas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:hint="Universitas"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textColorHint="#9A9999" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Semester"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/sp_smester"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/baground_spiner"
+                            android:hint="Semester"
+                            android:padding="15dp"
+                            android:textColor="#000"
+                            android:textColorHint="#9A9999" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Tl Tugas"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/edt_tltugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/baground_transparan"
+                                android:hint="Tanggal Tugas"
+                                android:textColor="#000"
+                                android:textColorHint="#9A9999" />
+
+                            <ImageView
+                                android:id="@+id/kalender1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:src="@drawable/ic_calendar" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Tl Pengumpulan"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/edt_tlpengumpulan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/baground_transparan"
+                                android:hint="Tanggal Pengumpulan Tugas"
+                                android:textColor="#000"
+                                android:textColorHint="#9A9999" />
+
+                            <ImageView
+                                android:id="@+id/kalender2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:src="@drawable/ic_calendar" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Waktu Pengumpulan"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/edt_waktupengumpulan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/baground_transparan"
+                                android:hint="Tanggal Pengumpulan Tugas"
+                                android:textColor="#000"
+                                android:textColorHint="#9A9999" />
+
+                            <ImageView
+                                android:id="@+id/jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:src="@drawable/ic_time" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Deskripsi"
+                            android:textColor="#8F000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_4"
+                            android:padding="20dp">
+
+                            <EditText
+                                android:id="@+id/edt_deskripsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:background="@drawable/baground_transparan"
+                                android:gravity="top"
+                                android:hint="Deskripsi"
+                                android:paddingStart="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="#000"
+                                android:textColorHint="#9A9999" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_crate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/rectangle_6"
+                            android:text="Create"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
